@@ -1,8 +1,12 @@
 import streamlit as st
 
-st.set_page_config(page_title="Sponti", page_icon="✨", layout="wide")
+st.set_page_config(
+    page_title="Aktivitäten finden",  # → Name im Seitenmenü UND Browser-Tab
+    page_icon="✨",
+    layout="wide"
+)
 
-st.title("🎈 Finde spontane Aktivitäten")
+st.title("Finde spontane Aktivitäten")
 
 # Session State für Auswahl speichern
 if "altersgruppe" not in st.session_state:
